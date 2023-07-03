@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <errorUrl>https://agility-saas-6725.my.salesforce.com?login=1</errorUrl>
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>UserId</identityMapping>
+    <issuer>https://d4k000002vah4uao.my.salesforce.com</issuer>
+    <loginUrl>https://d4k000002vah4uao.my.salesforce.com/idp/endpoint/HttpPost</loginUrl>
+    <name>d4k000002vah4uao SAML SSO Setting</name>
+    <oauthTokenEndpoint>https://agility-saas-6725.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSigningCertId>0P1Hs000001H1OZ</requestSigningCertId>
+    <salesforceLoginUrl>https://agility-saas-6725.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com/00DHs000001SH2IMAW</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>false</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>false</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIErDCCA5SgAwIBAgIOAXxjvP7UAAAAACRpoEkwDQYJKoZIhvcNAQELBQAwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzA5T2N0MjAyMV8wNjI4MjIxGDAWBgNVBAsMDzAwRDRLMDAwMDAyVkFINDEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0EwHhcNMjExMDA5MDYyODIyWhcNMjIxMDA5MDAwMDAwWjCBkDEoMCYGA1UEAwwfU2VsZlNpZ25lZENlcnRfMDlPY3QyMDIxXzA2MjgyMjEYMBYGA1UECwwPMDBENEswMDAwMDJWQUg0MRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMjC1f5HIcoh/O1IWZpZ86Tq9MILPDrYY1NYgbLENf8Syjzp49sWYwb77nOuNE0K5Mw56sBtYaUI5AhUeLdplfyAUTi6p4d5oa6R6cc1rx5b1NaQDa0waJRYqa1yFrgv4CugZWIXUIJoTh3vODWd7R6dfhxs61TqYDPGEkqTj8pWJxg1Ad3puHko3eYWVhpubetyBUjUv/23YYyRFisJ4wlusRG9UoozZHkoZues4gJrfzrZUN614v0nA7g95m5PUXMHS375tVg86pcxrzwr7bnleQfwMv3JEN12Cgpuue0hJ/qjRc7FzEu3QOKDlmXmoTERmCvjNKN97ElHTYJAbdkCAwEAAaOCAQAwgf0wHQYDVR0OBBYEFOH0/VC7ZYJsqbtBf4INx6D2to3GMA8GA1UdEwEB/wQFMAMBAf8wgcoGA1UdIwSBwjCBv4AU4fT9ULtlgmypu0F/gg3HoPa2jcahgZakgZMwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzA5T2N0MjAyMV8wNjI4MjIxGDAWBgNVBAsMDzAwRDRLMDAwMDAyVkFINDEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgF8Y7z+1AAAAAAkaaBJMA0GCSqGSIb3DQEBCwUAA4IBAQDDwmlPCPSdG/+soHPYrA4ymTVHJY15n9XCWH2gj5XzKAIvzwGAkvMOm45E9bJ/d+z+TsX5oRM4mMEFwMHZPkRa5fLibeq+2L9944dzH/Nc+g9uuFvJnUB4IzdLFosHJ4Ys4+71JVxbSMKqVukD6QeKMRjNk52jBy7CjeBAUcy89W5r9Ux5qsSLfLGfDi4uE5sJ6rs3JOV+f2a6WK4/hvJOMUtW9j4HkF2AccG4FQqiFOUyC4Bzk99bsjWR6tnk+Rb0JJutxX+rR4tqpYrqWnHJkhfttUF9W0rcbtKrs1hu6wUGLzX3On+U8pVCilhJMF0ddcfG9XIfWEPrNM1ZrbU4</validationCert>
+</SamlSsoConfig>

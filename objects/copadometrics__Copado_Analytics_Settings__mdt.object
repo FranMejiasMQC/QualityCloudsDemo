@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>copadometrics__Dashboard_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Dashboard URL</label>
+        <required>true</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>copadometrics__Site_Dashboard_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Site Dashboard URL</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <label>Copado Analytics Settings</label>
+    <pluralLabel>Copado Analytics Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
