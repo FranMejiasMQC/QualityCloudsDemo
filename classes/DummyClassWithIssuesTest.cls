@@ -5,6 +5,7 @@ public class DummyClassWithIssuesTest {
     static void methodName(){
         
         Test.startTest();
+        System.assertEquals(false, false);
         System.assertEquals(true, true);
         Test.stopTest();    
     }
