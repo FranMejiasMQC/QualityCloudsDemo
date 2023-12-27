@@ -281,7 +281,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Monitored Environments</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Ensure_a_Successful_Manual_Run</fullName>
