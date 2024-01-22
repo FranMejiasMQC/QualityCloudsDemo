@@ -1,0 +1,8 @@
+/* .slds-modal__content {
+    max-width: 80rem !important;
+    width: 80% !important;
+} */
+
+.statuscombobox .slds-dropdown-trigger_click .slds-dropdown {
+    height: 350px;
+}

@@ -1,0 +1,84 @@
+<template> 
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+    <div class="slds-modal__container">
+        <!-- modal header start -->
+        <header class="slds-modal__header">
+            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeAddUser}>
+                <lightning-icon icon-name="utility:close"
+                alternative-text="close"
+                variant="inverse"
+                size="small" ></lightning-icon>
+                <span class="slds-assistive-text">Close</span>
+            </button>
+            <template lwc:if={showSelectUsers}>   
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Add QC User</h2>
+            </template>
+            <template lwc:if={showSelectProfiles}>    
+                <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">Select QC Profiles</h2>
+            </template>
+        </header>
+
+        <template lwc:if={showSelectUsers}>        
+        <!-- modal body start -->
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <template lwc:if={showSpinner}> 
+                    <div>
+                        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+                    </div>
+                </template>  
+                <lightning-layout class="slds-p-bottom_x-small"  multiple-rows="true">
+                    <lightning-input class="slds-size_1-of-2 slds-m-left_x-small slds-m-bottom_x-small" type="text" label="Filter by user name" value={filter} onblur={getFilteredUsers} onchange={handleChangeFilter} onkeypress={checkEnter}></lightning-input>
+                    <lightning-combobox class="slds-size_1-of-2 slds-m-left_x-small slds-m-bottom_x-large" type="text" label="Filter by profile" value={filterProfiles} onchange={handleChangeProfile} options={filterProfileOptions}></lightning-combobox>
+                    <lightning-datatable
+                    key-field="userId"
+                    data={sfUsers}
+                    columns={columns}
+                    onrowselection={getSelectedUsers}>
+                    </lightning-datatable>  
+                </lightning-layout>
+            </div>   
+            <!-- modal footer start-->
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_brand" onclick={openSelectQCProfile}>Next</button>
+            </footer>
+        </template>
+        <template lwc:if={showSelectProfiles}>        
+            <!-- modal body start -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                    <lightning-layout>
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-m-bottom_x-large"> 
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th>Name</th>
+                                    <th>QC Profile</th>
+                                </tr>
+                            </thead>
+                                <template for:each={selectedUsersTable} for:item="user" for:index="indx">
+                                    <tr class="slds-hint-parent" key={user.userId} data-id={user.userId}>                                                
+                                        <td>
+                                        <lightning-input data-id={indx} value={user.name} disabled="true"></lightning-input>
+                                        </td>
+                                        <td>
+                                        <lightning-combobox
+                                            name={user.userId}
+                                            value={user.qcProfile}
+                                            placeholder="Select QC Profile"
+                                            options={pickListOptions}
+                                            onchange={handleChangeProfileUser} ></lightning-combobox>
+                                        </td>
+                                    </tr>
+                                </template>
+                        </table>        
+                        <br/>                
+                    </lightning-layout>
+                </div>   
+                <!-- modal footer start-->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_brand" onclick={back}>Back</button>
+                    <button class="slds-button slds-button_brand" onclick={submit}>Submit</button>
+                </footer>
+        </template>
+    </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>
